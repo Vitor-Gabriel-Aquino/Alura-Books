@@ -1,0 +1,159 @@
+.rodape {
+    background: var(--branco-padrao);
+}
+
+.rodape-titulo {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: var(--azul-degrade);
+    padding: 24px 0 8px 24px;
+}
+
+.rodape-texto {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    width: 381px;
+    padding: 0 0 34px 24px;
+    color: var(--azul-degrade);
+}
+
+.rodape__email {
+    background-color: transparent;
+    border: 1px solid #002F52;
+    color: var(--azul-degrade);
+    border-radius: 24px;
+    width: 80%;
+    height: 44px;
+    margin: 0 35px 41px 35px;
+    text-align: center;
+}
+
+.rodape__email::placeholder {
+    color: var(--azul-degrade);
+    font-family: var(--fonte-principal);
+    font-weight: 400;
+    padding-left: 44px;   
+    background: url(/imagens/AluraBooks/Vector.svg) no-repeat;
+    background-position: 16px;       
+    text-align: start;
+}
+
+hr {
+    margin: 0;
+}
+
+.grupo-alura {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: black;
+    padding: 16px 0 24px 24px;
+}
+
+footer {
+    background-color: white;
+}
+
+.lista__rodape {
+    display: none;
+}
+
+@media screen and (min-width: 1024px) {
+    .rodape{
+        display: flex;
+        height: 216px;
+
+    }
+
+    .lista__rodape {
+        margin-top: 35px;
+        display: block;
+    }
+
+    .rodape-titulo {
+        font-size: 24px;
+        padding: 30px 0 19px 149px;   
+        width: 376px; 
+    }
+
+    .rodape-texto {
+        padding-left: 149px;
+    }
+
+    .rodape__email {
+        width: 31.9%;
+        height: 44px;
+        text-align: center;
+        margin-top: 64px;
+    }
+
+    footer {
+        height: 513px;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .grupo-alura {
+        font-size: 24px;
+        padding: 36px 0 0 24px;
+    }
+
+
+
+    .lista__rodape--titulo {
+        font-weight: 400;
+        font-size: 14px;
+        color: #858585;
+        margin-bottom: 32px;
+    }
+
+    .lista__rodape--item {
+        margin-bottom: 25px;
+        display: flex;
+        align-items: center;
+    }
+
+    .lista__rodape--item, a {
+        text-decoration: none;
+        color: #474646;
+        font-size: 14px;
+        margin-left: 8px;
+    }
+
+    
+    .lista__rodape--item a:hover {
+        color: var(--laranja-padrao);
+        }
+
+}
+
+@media screen and (min-width: 1728px) {
+    .rodape {
+        justify-content: center;
+    }
+
+    .rodape-titulo {
+        width: auto;
+        padding-top: 40px;
+    }
+
+    .rodape__email {
+        width: 17%;
+    }
+
+    .lista__rodape {
+        border-left: 1px solid #858585;
+        padding: 0 0 0 20px;
+        margin: 0 0 20px 0;
+    }
+
+     footer {
+        padding: 30px 0 30px 0;
+     }
+
+     .grupo-alura {
+        padding: 20px 0 ;
+     }
+}
